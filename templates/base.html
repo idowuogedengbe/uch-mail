@@ -1,0 +1,92 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  {% block head %} {% endblock head %}
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<title>Landing &mdash; Free One Page Bootstrap 4 Template by uicookies.com</title>
+		<meta name="description" content="Free Bootstrap 4 Template by uicookies.com">
+		<meta name="keywords" content="Free website templates, Free bootstrap themes, Free template, Free bootstrap, Free website template">
+
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600|Montserrat:200,300,400" rel="{% static 'stylesheet' %}">
+
+		<link rel="stylesheet" href="{% static 'assets/css/bootstrap/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/fonts/ionicons/css/ionicons.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/fonts/law-icons/font/flaticon.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/fonts/fontawesome/css/font-awesome.min.css' %}">
+
+
+    <link rel="stylesheet" href="{% static 'assets/css/slick.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/slick-theme.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/css/helpers.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/landing-2.css' %}">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
+    
+  </head>
+	<body data-spy="scroll" data-target="#pb-navbar" data-offset="200">
+    <!-- <section class="pb_cover_v3 overflow-hidden cover-bg-indigo cover-bg-opacity text-left pb_gradient_v1 pb_slant-light" id="section-home"> --> -->
+    <nav class="navbar navbar-expand-lg navbar-dark pb_navbar pb_scrolled-light pb_gradient_v1 id="pb-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="{% static 'home.html' %}">University College Hospital, Ibadan.</a>
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#probootstrap-navbar" aria-controls="probootstrap-navbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span><i class="ion-navicon"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="probootstrap-navbar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:8000">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:8000">Email Request Form</a></li>
+            <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:8000/admin/">Admin</a></li>
+            <li class="nav-item"><a class="nav-link" href="http://payslip.uch-ibadan.org.ng/">Payslip Sender</a></li>
+            <li class="nav-item"><a class="nav-link" href="List of request form"></a></li>
+            <li class="nav-item cta-btn ml-xl-2 ml-lg-2 ml-md-0 ml-sm-0 ml-0"><a class="nav-link" href="{% static 'https://uicookies.com/' %}" target="_blank"><span class="pb_rounded-4 px-4">G</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- END nav -->
+
+
+  </br>
+</br></br></br>
+
+      <div class="container ">
+        <div class="row align-items-center justify-content-center">
+
+        </div>
+                 
+          <div class="relative align-self-center">
+            {% block content%}
+            
+
+     
+        
+           {% endblock content%}
+      </div>
+      </div>
+
+ 
+    <script src="{% static 'assets/js/jquery.min.js' %}"></script>
+    <script src="{% static 'assets/js/popper.min.js' %}"></script>
+    <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'assets/js/slick.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.mb.YTPlayer.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.waypoints.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.easing.1.3.js' %}"></script>
+    <script src="{% static 'assets/js/main.js' %}"></script>
+    {% block js%}
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/jszip-2.5.0/dt-1.10.20/af-2.3.4/b-1.6.1/b-colvis-1.6.1/b-html5-1.6.1/b-print-1.6.1/cr-1.5.2/fc-3.3.0/kt-2.5.1/r-2.2.3/rg-1.1.1/rr-1.2.6/sl-1.3.1/datatables.min.css"/>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/dt/jszip-2.5.0/dt-1.10.20/af-2.3.4/b-1.6.1/b-colvis-1.6.1/b-html5-1.6.1/b-print-1.6.1/cr-1.5.2/fc-3.3.0/kt-2.5.1/r-2.2.3/rg-1.1.1/rr-1.2.6/sl-1.3.1/datatables.min.js"></script> 
+    {% endblock js%}
+
+	</body>
+</html>

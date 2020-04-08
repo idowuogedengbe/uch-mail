@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>here were</h1>
+{% block content %}
+    <div class="row mt-4">
+        <div class="col">
+            <ul class="list-group">
+                {% for get_all_applicant in get_all_applicants%}
+                <li class="list-group-item">{{ get_all_applicant.last_name }}</li>
+
+                {% endfor %}
+               
+                
+              </ul>
+
+        </div>
+    </div>
+{% endblock content %}
+</body>
+</html>

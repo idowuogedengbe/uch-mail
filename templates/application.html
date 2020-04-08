@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+
+{% block content%}
+<div class="row mt-4">
+    <div class="col">
+        <h3>APPLICATION FORM FOR CREATION OF OFFICIAL EMAIL ADDRESS</h3></br>
+        <form action="application" method="post">
+            {% csrf_token %}
+            
+
+          <form class="">
+                
+          </div>  
+                            
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <input type ="text" class="form-control " name="pno" placeholder="PNO"><br>
+  
+              </div>
+  
+              <div class="form-group col-md-6">
+                   
+                <input type ="text" class="form-control " name="last_name" placeholder="Last Name"><br>
+            </div>
+
+            </div>
+            
+
+            <div class="form-row">
+
+              <div class="form-group col-md-6">
+                 
+                <input type ="text" class="form-control " name="first_name" placeholder="First Name"><br>
+            </div>
+    
+            <div class="form-group col-md-6">
+                 
+                <input type ="text" class="form-control" name="other_name" placeholder="Other Name"><br>
+            </div>
+            </div>  
+            
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                 
+                <input type ="text" class="form-control" name="phone_no" placeholder="Phone Number"><br>
+            </div>
+
+            <div class="form-group col-md-6">
+                 
+                <input type ="text" class="form-control" name="designation" placeholder="Designation "><br>
+            </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                 
+                <input type ="text" class="form-control "  pb_height-50 reverse name="email" placeholder="Email"><br>
+            </div>
+
+            <div class="form-group col-md-6 form-control">
+                    <select id="department_name" name="department_name" >
+                    <option value="2">Information Technology</option>
+                    <option value="3">Human Resource</option>
+                    <option value="4">General Administration</option>
+                    <option value="Please select your department" selected>Please select your department</option>
+                  </select>
+                  
+
+            </div>
+            </div>
+    
+
+              
+            
+            <input type="submit" class="btn btn-primary align ">
+        </form>
+    </div>
+</div>
+
+
+{% endblock content%}

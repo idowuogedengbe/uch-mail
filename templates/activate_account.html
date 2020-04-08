@@ -1,0 +1,12 @@
+{% autoescape off %}
+Dear Sir, 
+
+{{ applicant.first_name }}, {{ applicant.last_name }}, a member of your department applied for University College Hospital official email,
+you hereby require to please click on the link below to confirm if he/she is a bonafide member of your department.
+
+Thank you.
+
+http://{{ domain }}{% url 'activate' uidb64=uid token=token %} 
+{% endautoescape %}
+
+
